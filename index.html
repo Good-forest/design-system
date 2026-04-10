@@ -137,7 +137,7 @@
         --tooltip-border: #404040;
       }
 
-      /* ── FOREST (new — nature dark green) ── */
+      /* ── FOREST (nature dark green — emerald & amber) ── */
       [data-theme="forest"] {
         --bg: #0f1f12;
         --surface: #162119;
@@ -145,35 +145,35 @@
         --cb: rgba(50, 213, 131, 0.15);
         --nav: rgba(22, 33, 25, 0.96);
         --t1: #e8f5ec;
-        --t2: #7cfdea;
-        --t3: rgba(124, 253, 234, 0.45);
-        --primary: #32d583;
+        --t2: #a7f3d0;
+        --t3: rgba(167, 243, 208, 0.45);
+        --primary: #34d399;
         --primary-txt: #0f1f12;
-        --accent: #32d583;
-        --acs: rgba(50, 213, 131, 0.15);
-        /* Severity (vivid on dark green) */
-        --alertes: #ff4d4d;
-        --alertes-s: rgba(255, 77, 77, 0.15);
-        --alertes-b: rgba(255, 77, 77, 0.3);
-        --anomalie: #ff9500;
-        --anomalie-s: rgba(255, 149, 0, 0.15);
-        --anomalie-b: rgba(255, 149, 0, 0.3);
-        --stress: #e1fb15;
-        --stress-s: rgba(225, 251, 21, 0.12);
-        --stress-b: rgba(225, 251, 21, 0.28);
-        --normal: #32d583;
+        --accent: #34d399;
+        --acs: rgba(52, 211, 153, 0.15);
+        /* Severity — plus chauds / naturels que Dark */
+        --alertes: #f87171;
+        --alertes-s: rgba(248, 113, 113, 0.14);
+        --alertes-b: rgba(248, 113, 113, 0.32);
+        --anomalie: #fb923c;
+        --anomalie-s: rgba(251, 146, 60, 0.14);
+        --anomalie-b: rgba(251, 146, 60, 0.32);
+        --stress: #fbbf24;
+        --stress-s: rgba(251, 191, 36, 0.13);
+        --stress-b: rgba(251, 191, 36, 0.3);
+        --normal: #34d399;
         /* Charts */
-        --chart-forte: #ff4d4d;
-        --chart-moy: #ff9500;
-        --chart-surf: #ff9500;
-        --chart-bar: #32d583;
+        --chart-forte: #f87171;
+        --chart-moy: #fbbf24;
+        --chart-surf: #fb923c;
+        --chart-bar: #34d399;
         /* UI */
-        --sh: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(50, 213, 131, 0.08);
+        --sh: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(52, 211, 153, 0.08);
         --shm: 0 4px 20px rgba(0, 0, 0, 0.5);
         --ibg: #162119;
-        --grid-y: rgba(50, 213, 131, 0.1);
+        --grid-y: rgba(52, 211, 153, 0.1);
         --tooltip-bg: #1e2f21;
-        --tooltip-border: rgba(50, 213, 131, 0.2);
+        --tooltip-border: rgba(52, 211, 153, 0.25);
       }
 
       /* ═══════════════════════════════════════════
@@ -1150,7 +1150,7 @@
           </svg>
           <span
             style="font-size:10px;font-weight:500;padding:2px 8px;background:var(--acs);color:var(--accent);border-radius:20px;border:1px solid rgba(50,213,131,.25);margin-left:4px;"
-            >DS v1.0</span
+            >DS v1</span
           >
         </div>
         <div style="display:flex;gap:2px;overflow-x:auto;flex:1;">
@@ -1165,6 +1165,7 @@
           <a class="dsl" href="#patterns">Patterns</a>
           <a class="dsl" href="#root">:root</a>
           <a class="dsl" href="#glass">Glass</a>
+          <a class="dsl" href="#mappins">Map Pins</a>
         </div>
         <div class="tbts">
           <button class="tbt active" onclick="setTheme('light',this)">☀ Light</button>
@@ -1294,20 +1295,20 @@
             </div>
             <div class="sw-body">
               <div class="sw-name">Cyan Accent</div>
-              <div class="sw-var">--accent (dark/forest)</div>
-              <div class="sw-use">Accent principal, status normal dark, chart barres</div>
+              <div class="sw-var">--accent (dark)</div>
+              <div class="sw-use">
+                Accent principal dark, status normal dark, chart barres dark
+              </div>
             </div>
           </div>
           <div class="sw-card">
-            <div class="sw-top" style="background:#7CFDEA;">
-              <span class="sw-hex" style="color:#1a1a1a;background:rgba(0,0,0,.15);"
-                >#7CFDEA</span
-              >
+            <div class="sw-top" style="background:#34d399;">
+              <span class="sw-hex">#34d399</span>
             </div>
             <div class="sw-body">
-              <div class="sw-name">Cyan Light</div>
-              <div class="sw-var">--color-brand-cyan-light</div>
-              <div class="sw-use">SpeciesChart, texte secondaire forest mode</div>
+              <div class="sw-name">Emerald 400</div>
+              <div class="sw-var">--primary / --accent / --normal (forest)</div>
+              <div class="sw-use">Bouton, accent et statut normal · thème Forest</div>
             </div>
           </div>
           <div class="sw-card">
@@ -1321,13 +1322,16 @@
             </div>
           </div>
           <div class="sw-card">
-            <div class="sw-top" style="background:#1F2937;">
-              <span class="sw-hex">#1F2937</span>
+            <div
+              class="sw-top"
+              style="background:#0f1f12;border:1px solid rgba(52,211,153,.2);"
+            >
+              <span class="sw-hex">#0f1f12</span>
             </div>
             <div class="sw-body">
-              <div class="sw-name">Slate Dark</div>
-              <div class="sw-var">--primary (light)</div>
-              <div class="sw-use">Bouton principal light, fond header</div>
+              <div class="sw-name">Forest Deep</div>
+              <div class="sw-var">--bg (forest) · gf-950</div>
+              <div class="sw-use">Fond app thème Forest, couleur de marque profonde</div>
             </div>
           </div>
           <div class="sw-card">
@@ -1346,20 +1350,10 @@
             </div>
             <div class="sw-body">
               <div class="sw-name">Red Light</div>
-              <div class="sw-var">--alertes (dark)</div>
+              <div class="sw-var">--alertes (dark · forest)</div>
               <div class="sw-use">
-                Forte sévérité / Alertes charts dark (plus lisible)
+                Critique / alertes — dark et forest (lisibilité sur fond sombre)
               </div>
-            </div>
-          </div>
-          <div class="sw-card">
-            <div class="sw-top" style="background:#FF4D4D;">
-              <span class="sw-hex">#FF4D4D</span>
-            </div>
-            <div class="sw-body">
-              <div class="sw-name">Red Vivid Forest</div>
-              <div class="sw-var">--alertes (forest)</div>
-              <div class="sw-use">Alertes / critique sur fond vert sombre</div>
             </div>
           </div>
           <div class="sw-card">
@@ -1367,11 +1361,19 @@
               <span class="sw-hex">#FF9500</span>
             </div>
             <div class="sw-body">
-              <div class="sw-name">Orange</div>
+              <div class="sw-name">Orange iOS</div>
               <div class="sw-var">--anomalie (dark)</div>
-              <div class="sw-use">
-                Anomalie dark/forest, Surface chart, Doughnut interne
-              </div>
+              <div class="sw-use">À risque dark, surface chart dark, doughnut</div>
+            </div>
+          </div>
+          <div class="sw-card">
+            <div class="sw-top" style="background:#fb923c;">
+              <span class="sw-hex">#fb923c</span>
+            </div>
+            <div class="sw-body">
+              <div class="sw-name">Orange 400</div>
+              <div class="sw-var">--anomalie (forest)</div>
+              <div class="sw-use">À risque · thème Forest</div>
             </div>
           </div>
           <div class="sw-card">
@@ -1391,9 +1393,21 @@
               >
             </div>
             <div class="sw-body">
-              <div class="sw-name">Amber</div>
+              <div class="sw-name">Amber 600</div>
               <div class="sw-var">--stress (light)</div>
-              <div class="sw-use">Stress sévérité light, chart Doughnut Moyenne</div>
+              <div class="sw-use">À surveiller light, chart doughnut moyenne</div>
+            </div>
+          </div>
+          <div class="sw-card">
+            <div class="sw-top" style="background:#fbbf24;">
+              <span class="sw-hex" style="color:#1a1a1a;background:rgba(0,0,0,.15);"
+                >#fbbf24</span
+              >
+            </div>
+            <div class="sw-body">
+              <div class="sw-name">Amber 400</div>
+              <div class="sw-var">--stress (forest)</div>
+              <div class="sw-use">À surveiller · thème Forest</div>
             </div>
           </div>
           <div class="sw-card">
@@ -1446,23 +1460,31 @@
           <div class="code">
             <span class="k">colors</span>: { <span class="k">gf</span>: {
             <span class="cm">/* palette verte naturelle */</span>
-            <span class="n2">400</span>:<span class="s">'#32D583'</span>,
+            <span class="n2">400</span>:<span class="s">'#34d399'</span>,
+            <span class="cm">// emerald-400 · forest accent</span>
             <span class="n2">500</span>:<span class="s">'#10B981'</span>,
-            <span class="cm">// accents principaux</span>
+            <span class="cm">// emerald-500 · light accent</span>
+            <span class="n2">600</span>:<span class="s">'#32D583'</span>,
+            <span class="cm">// cyan · dark accent</span>
             <span class="n2">950</span>:<span class="s">'#0f1f12'</span>,
-            <span class="cm">// bg forest mode</span>
+            <span class="cm">// forest bg</span>
             },
             <span class="cm"
-              >/* Status / Sévérité — via CSS variables (adaptatifs aux thèmes) */</span
+              >/* Sévérité — CSS variables, adaptatifs aux 3 thèmes */</span
+            >
+            <span class="cm">/* --alertes : #EF4444 light / #F87171 dark+forest */</span>
+            <span class="cm"
+              >/* --anomalie: #F97316 light / #FF9500 dark / #fb923c forest */</span
             >
             <span class="cm"
-              >/* alertes: #EF4444 light / #F87171 dark / #FF4D4D forest */</span
+              >/* --stress : #EAB308 light / #E1FB15 dark / #fbbf24 forest */</span
             >
-            <span class="cm">/* anomalie: #F97316 light / #FF9500 dark+forest */</span>
             <span class="cm"
-              >/* stress: #EAB308 light / #E1FB15 dark / #E1FB15 forest */</span
+              >/* --primary : #10b981 light / #E1FB15 dark / #34d399 forest */</span
             >
-            <span class="cm">/* Utiliser bg-[var(--card)] text-[var(--t1)] etc. */</span>
+            <span class="cm"
+              >/* → Toujours utiliser bg-[var(--card)] text-[var(--t1)] etc. */</span
+            >
             }
           </div>
         </div>
@@ -1646,86 +1668,82 @@
             </div>
           </div>
           <!-- FOREST -->
-          <div class="tok-panel tp-f" style="border:1px solid rgba(50,213,131,.2);">
+          <div class="tok-panel tp-f" style="border:1px solid rgba(52,211,153,.2);">
             <p
               style="font-size:13px;font-weight:700;color:#e8f5ec;margin-bottom:14px;display:flex;align-items:center;gap:8px;"
             >
               <span style="font-size:18px;">🌲</span>Forest
             </p>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--bg</span
+              <span class="tok-n" style="color:#a7f3d0;">--bg</span
               ><span class="tok-v" style="color:#e8f5ec;"
                 ><span
                   class="tok-dot"
-                  style="background:#0f1f12;border-color:rgba(50,213,131,.3);"
+                  style="background:#0f1f12;border-color:rgba(52,211,153,.3);"
                 ></span
                 >#0f1f12</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--card</span
+              <span class="tok-n" style="color:#a7f3d0;">--card</span
               ><span class="tok-v" style="color:#e8f5ec;"
                 ><span
                   class="tok-dot"
-                  style="background:#1e2f21;border-color:rgba(50,213,131,.3);"
+                  style="background:#1e2f21;border-color:rgba(52,211,153,.3);"
                 ></span
                 >#1e2f21</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--t1 text</span
+              <span class="tok-n" style="color:#a7f3d0;">--t1 text</span
               ><span class="tok-v" style="color:#e8f5ec;"
                 ><span class="tok-dot" style="background:#e8f5ec;"></span>#e8f5ec</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--t2 muted</span
-              ><span class="tok-v" style="color:#7CFDEA;"
-                ><span
-                  class="tok-dot"
-                  style="background:#7CFDEA;border-color:rgba(255,255,255,.2);"
-                ></span
-                >#7CFDEA</span
+              <span class="tok-n" style="color:#a7f3d0;">--t2 muted</span
+              ><span class="tok-v" style="color:#a7f3d0;"
+                ><span class="tok-dot" style="background:#a7f3d0;"></span>#a7f3d0
+                (emerald-200)</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--primary btn</span
-              ><span class="tok-v" style="color:#32D583;"
-                ><span class="tok-dot" style="background:#32D583;"></span>#32D583</span
+              <span class="tok-n" style="color:#a7f3d0;">--primary btn</span
+              ><span class="tok-v" style="color:#34d399;"
+                ><span class="tok-dot" style="background:#34d399;"></span>#34d399
+                (emerald-400)</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--accent</span
-              ><span class="tok-v" style="color:#32D583;"
-                ><span class="tok-dot" style="background:#32D583;"></span>#32D583</span
+              <span class="tok-n" style="color:#a7f3d0;">--accent</span
+              ><span class="tok-v" style="color:#34d399;"
+                ><span class="tok-dot" style="background:#34d399;"></span>#34d399</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--alertes</span
-              ><span class="tok-v" style="color:#FF4D4D;"
-                ><span class="tok-dot" style="background:#FF4D4D;"></span>#FF4D4D</span
+              <span class="tok-n" style="color:#a7f3d0;">--alertes</span
+              ><span class="tok-v" style="color:#f87171;"
+                ><span class="tok-dot" style="background:#f87171;"></span>#f87171</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--anomalie</span
-              ><span class="tok-v" style="color:#FF9500;"
-                ><span class="tok-dot" style="background:#FF9500;"></span>#FF9500</span
+              <span class="tok-n" style="color:#a7f3d0;">--anomalie</span
+              ><span class="tok-v" style="color:#fb923c;"
+                ><span class="tok-dot" style="background:#fb923c;"></span>#fb923c
+                (orange-400)</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--stress</span
-              ><span class="tok-v" style="color:#E1FB15;"
-                ><span
-                  class="tok-dot"
-                  style="background:#E1FB15;border-color:rgba(255,255,255,.2);"
-                ></span
-                >#E1FB15</span
+              <span class="tok-n" style="color:#a7f3d0;">--stress</span
+              ><span class="tok-v" style="color:#fbbf24;"
+                ><span class="tok-dot" style="background:#fbbf24;"></span>#fbbf24
+                (amber-400)</span
               >
             </div>
             <div class="tok-row">
-              <span class="tok-n" style="color:#7CFDEA;">--normal</span
-              ><span class="tok-v" style="color:#32D583;"
-                ><span class="tok-dot" style="background:#32D583;"></span>#32D583</span
+              <span class="tok-n" style="color:#a7f3d0;">--normal</span
+              ><span class="tok-v" style="color:#34d399;"
+                ><span class="tok-dot" style="background:#34d399;"></span>#34d399</span
               >
             </div>
           </div>
@@ -1755,8 +1773,8 @@
             <p
               style="font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1;"
             >
-              <span style="color:var(--t1);">good</span
-              ><span style="color:var(--accent);">forest</span>
+              <span style="color:var(--t1);">goodforest</span
+              ><span style="color:var(--accent);"> -monitor</span>
             </p>
           </div>
           <div class="card" style="padding:22px;">
@@ -1823,8 +1841,8 @@
                 <td style="padding-left:14px;">
                   <span
                     style="font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;letter-spacing:-.03em;"
-                    ><span style="color:var(--t1);">good</span
-                    ><span style="color:var(--accent);">forest</span></span
+                    ><span style="color:var(--t1);">goodforest</span
+                    ><span style="color:var(--accent);"> -monitor</span></span
                   >
                 </td>
                 <td class="tspec">2.5rem/800</td>
@@ -1898,7 +1916,7 @@
                 <td style="padding-left:14px;">
                   <span
                     style="font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--t2);"
-                    >ALERTES DÉTECTÉES 🔔</span
+                    >ALERTES DÉTECTÉES</span
                   >
                 </td>
                 <td class="tspec">.85rem/600</td>
@@ -1986,25 +2004,112 @@
         <div
           style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:40px;"
         >
+          <!-- KPI · Alertes détectées -->
           <div class="card" style="padding:20px 22px;">
-            <div class="kl">ALERTES DÉTECTÉES 🔔</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+              <div
+                style="width:36px;height:36px;border-radius:10px;background:var(--alertes-s);border:1px solid var(--alertes-b);display:flex;align-items:center;justify-content:center;flex-shrink:0;"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="var(--alertes)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                  />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <div class="kl" style="margin:0;">ALERTES DÉTECTÉES</div>
+            </div>
             <div class="kv">42</div>
             <span class="kt kt-neg">↑ +12 vs p.p.</span>
           </div>
+          <!-- KPI · Surface impactée -->
           <div class="card" style="padding:20px 22px;">
-            <div class="kl">SURFACE IMPACTÉE ⛰️</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+              <div
+                style="width:36px;height:36px;border-radius:10px;background:var(--acs);border:1px solid rgba(16,185,129,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                  <line x1="9" y1="3" x2="9" y2="18" />
+                  <line x1="15" y1="6" x2="15" y2="21" />
+                </svg>
+              </div>
+              <div class="kl" style="margin:0;">SURFACE IMPACTÉE</div>
+            </div>
             <div class="kv">
               3.72<span style="font-size:.4em;font-weight:500;color:var(--t2);"> ha</span>
             </div>
             <span class="kt kt-pos">↓ -0.85 ha vs p.p.</span>
           </div>
+          <!-- KPI · Forte sévérité -->
           <div class="card" style="padding:20px 22px;">
-            <div class="kl">FORTE SÉVÉRITÉ 🚨</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+              <div
+                style="width:36px;height:36px;border-radius:10px;background:var(--alertes-s);border:1px solid var(--alertes-b);display:flex;align-items:center;justify-content:center;flex-shrink:0;"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="var(--alertes)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"
+                  />
+                </svg>
+              </div>
+              <div class="kl" style="margin:0;">FORTE SÉVÉRITÉ</div>
+            </div>
             <div class="kv" style="color:var(--alertes);">17</div>
             <span class="kt kt-neg">↑ +23% sur 12 mois</span>
           </div>
+          <!-- KPI · Parcelles touchées -->
           <div class="card" style="padding:20px 22px;">
-            <div class="kl">PARCELLES TOUCHÉES 📍</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+              <div
+                style="width:36px;height:36px;border-radius:10px;background:var(--anomalie-s);border:1px solid var(--anomalie-b);display:flex;align-items:center;justify-content:center;flex-shrink:0;"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="var(--anomalie)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"
+                  />
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                </svg>
+              </div>
+              <div class="kl" style="margin:0;">PARCELLES TOUCHÉES</div>
+            </div>
             <div class="kv">8</div>
             <span class="kt kt-pos">↓ -15% sur 12 mois</span>
           </div>
@@ -2017,51 +2122,81 @@
           Badges &amp; Statuts de sévérité
         </p>
         <div class="card" style="padding:22px;margin-bottom:40px;">
-          <div
-            style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;"
-          >
-            <span class="badge ba"><span class="bd"></span>Alertes</span>
-            <span class="badge bao"><span class="bd"></span>Anomalie</span>
-            <span class="badge bst"><span class="bd"></span>Stress</span>
-            <span class="badge bn">Normal</span>
-            <span class="badge ba">CRITIQUE</span>
-            <span class="badge bao">À RISQUE</span>
-            <span class="badge bst">WATCH</span>
+          <!-- Badges FR -->
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:16px;">
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <span
+                style="font-size:10px;font-weight:700;color:var(--t3);letter-spacing:.08em;text-transform:uppercase;min-width:22px;"
+                >FR</span
+              >
+              <span class="badge bn"><span class="bd"></span>Normal</span>
+              <span class="badge bst"><span class="bd"></span>À surveiller</span>
+              <span class="badge bao"><span class="bd"></span>À risque</span>
+              <span class="badge ba"><span class="bd"></span>Critique</span>
+              <span style="width:1px;height:18px;background:var(--cb);display:inline-block;margin:0 2px;"></span>
+              <span class="badge bn"><span class="bd"></span>Normal</span>
+              <span class="badge bst"><span class="bd"></span>Stress</span>
+              <span class="badge bao"><span class="bd"></span>Anomalie</span>
+              <span class="badge ba"><span class="bd"></span>Alertes</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <span
+                style="font-size:10px;font-weight:700;color:var(--t3);letter-spacing:.08em;text-transform:uppercase;min-width:22px;"
+                >EN</span
+              >
+              <span class="badge bn"><span class="bd"></span>Normal</span>
+              <span class="badge bst"><span class="bd"></span>Watch</span>
+              <span class="badge bao"><span class="bd"></span>Caution</span>
+              <span class="badge ba"><span class="bd"></span>Critical</span>
+              <span style="width:1px;height:18px;background:var(--cb);display:inline-block;margin:0 2px;"></span>
+              <span class="badge bn"><span class="bd"></span>Normal</span>
+              <span class="badge bst"><span class="bd"></span>Stress</span>
+              <span class="badge bao"><span class="bd"></span>Anomaly</span>
+              <span class="badge ba"><span class="bd"></span>Alerts</span>
+            </div>
           </div>
-          <!-- Status dots (source: codebase) -->
+          <!-- Status dots -->
           <div class="div" style="margin-bottom:14px;"></div>
           <div
             style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-bottom:14px;"
           >
-            <div style="display:flex;align-items:center;gap:7px;">
-              <span class="sdot" style="background:var(--normal);"></span
-              ><span style="font-size:13px;color:var(--t1);font-weight:500;">Normal</span>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span class="sdot" style="background:var(--normal);"></span>
+              <span style="font-size:13px;color:var(--t1);font-weight:500;">Normal</span>
             </div>
-            <div style="display:flex;align-items:center;gap:7px;">
-              <span class="sdot" style="background:var(--stress);"></span
-              ><span style="font-size:13px;color:var(--t1);font-weight:500;">Watch</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:7px;">
-              <span class="sdot" style="background:var(--anomalie);"></span
-              ><span style="font-size:13px;color:var(--t1);font-weight:500;"
-                >At Risk</span
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span class="sdot" style="background:var(--stress);"></span>
+              <span style="font-size:13px;color:var(--t1);font-weight:500;"
+                >À surveiller</span
               >
+              <span style="font-size:11px;color:var(--t3);">· Watch</span>
             </div>
-            <div style="display:flex;align-items:center;gap:7px;">
-              <span class="sdot" style="background:var(--alertes);"></span
-              ><span style="font-size:13px;color:var(--t1);font-weight:500;"
-                >Critical</span
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span class="sdot" style="background:var(--anomalie);"></span>
+              <span style="font-size:13px;color:var(--t1);font-weight:500;"
+                >À risque</span
               >
+              <span style="font-size:11px;color:var(--t3);">· Caution</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span class="sdot" style="background:var(--alertes);"></span>
+              <span style="font-size:13px;color:var(--t1);font-weight:500;"
+                >Critique</span
+              >
+              <span style="font-size:11px;color:var(--t3);">· Critical</span>
             </div>
           </div>
           <div class="div" style="margin-bottom:14px;"></div>
           <div class="code">
-            <span class="cm">/* Alertes (rouge) */</span> bg-[var(--alertes-s)]
-            text-[var(--alertes)] border border-[var(--alertes-b)] rounded-full
-            <span class="cm">/* Anomalie (orange) */</span> bg-[var(--anomalie-s)]
-            text-[var(--anomalie)] border border-[var(--anomalie-b)] rounded-full
-            <span class="cm">/* Stress (jaune) */</span> bg-[var(--stress-s)]
-            text-[var(--stress)] border border-[var(--stress-b)] rounded-full
+            <span class="cm">/* Normal (vert) — FR: Normal / EN: Normal */</span>
+            bg-[var(--acs)] text-[var(--accent)] border border-[rgba(16,185,129,.2)]
+            <span class="cm">/* Stress (jaune) — FR: À surveiller / EN: Watch */</span>
+            bg-[var(--stress-s)] text-[var(--stress)] border border-[var(--stress-b)]
+            <span class="cm">/* Anomalie (orange)— FR: À risque / EN: Caution */</span>
+            bg-[var(--anomalie-s)] text-[var(--anomalie)] border
+            border-[var(--anomalie-b)]
+            <span class="cm">/* Alertes (rouge) — FR: Critique / EN: Critical */</span>
+            bg-[var(--alertes-s)] text-[var(--alertes)] border border-[var(--alertes-b)]
           </div>
         </div>
 
@@ -2121,8 +2256,9 @@
             <button class="btn btn-p btn-lg">btn-lg</button>
           </div>
           <div class="code">
-            <span class="cm">/* Light → bg: #1F2937, text: #FFF */</span>
+            <span class="cm">/* Light → bg: #10b981, text: #FFF */</span>
             <span class="cm">/* Dark → bg: #E1FB15, text: #1a1a1a */</span>
+            <span class="cm">/* Forest → bg: #34d399, text: #0f1f12 */</span>
             <span class="cm">/* Forest → bg: #32D583, text: #0f1f12 */</span>
             padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 600; font-size:
             0.9rem; transition: all 0.2s ease-in-out;
@@ -2749,7 +2885,46 @@
             class="chart-ref"
             style="border-color:var(--anomalie);margin-bottom:0;height:100%;"
           >
-            <h3>🍩 SeverityDoughnut.vue</h3>
+            <h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                style="display:inline-block;vertical-align:-3px;margin-right:6px;"
+              >
+                <circle
+                  cx="8"
+                  cy="8"
+                  r="5.5"
+                  stroke="var(--alertes)"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke-dasharray="9 25.5"
+                  transform="rotate(-90 8 8)"
+                />
+                <circle
+                  cx="8"
+                  cy="8"
+                  r="5.5"
+                  stroke="var(--anomalie)"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke-dasharray="7 27.5"
+                  transform="rotate(19 8 8)"
+                />
+                <circle
+                  cx="8"
+                  cy="8"
+                  r="5.5"
+                  stroke="var(--normal)"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke-dasharray="15.5 19"
+                  transform="rotate(108 8 8)"
+                /></svg
+              >SeverityDoughnut.vue
+            </h3>
             <div class="chart-type"><span>Double-Ring Doughnut · vue-chartjs</span></div>
             <table class="ref-table">
               <tr>
@@ -2817,7 +2992,57 @@
           style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;"
         >
           <div class="chart-ref" style="border-color:var(--alertes);">
-            <h3>📊 MonthlyEventsChart.vue</h3>
+            <h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                style="display:inline-block;vertical-align:-3px;margin-right:6px;"
+              >
+                <rect x="1" y="9" width="3.5" height="6" rx="0.5" fill="var(--alertes)" />
+                <rect
+                  x="1"
+                  y="5.5"
+                  width="3.5"
+                  height="3.5"
+                  rx="0.5"
+                  fill="var(--anomalie)"
+                />
+                <rect
+                  x="6.25"
+                  y="5"
+                  width="3.5"
+                  height="10"
+                  rx="0.5"
+                  fill="var(--alertes)"
+                />
+                <rect
+                  x="6.25"
+                  y="2"
+                  width="3.5"
+                  height="3"
+                  rx="0.5"
+                  fill="var(--stress)"
+                />
+                <rect
+                  x="11.5"
+                  y="7.5"
+                  width="3.5"
+                  height="7.5"
+                  rx="0.5"
+                  fill="var(--anomalie)"
+                />
+                <rect
+                  x="11.5"
+                  y="4.5"
+                  width="3.5"
+                  height="3"
+                  rx="0.5"
+                  fill="var(--alertes)"
+                /></svg
+              >MonthlyEventsChart.vue
+            </h3>
             <div class="chart-type"><span>Stacked Bar</span></div>
             <table class="ref-table">
               <tr>
@@ -2863,7 +3088,37 @@
             </table>
           </div>
           <div class="chart-ref" style="border-color:var(--alertes);">
-            <h3>📈 MonthlySurfaceChart.vue</h3>
+            <h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                style="display:inline-block;vertical-align:-3px;margin-right:6px;"
+              >
+                <path
+                  d="M1 12 L4 7.5 L7 9.5 L10 4 L13 6.5 L15 2.5"
+                  stroke="var(--alertes)"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1 12 L4 7.5 L7 9.5 L10 4 L13 6.5 L15 2.5 L15 15 L1 15 Z"
+                  fill="var(--alertes)"
+                  opacity="0.12"
+                />
+                <path
+                  d="M1 13.5 L4 11 L7 12 L10 9 L13 11 L15 8"
+                  stroke="var(--anomalie)"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >MonthlySurfaceChart.vue
+            </h3>
             <div class="chart-type"><span>Dual Area Line</span></div>
             <table class="ref-table">
               <tr>
@@ -2925,7 +3180,29 @@
             </table>
           </div>
           <div class="chart-ref" style="border-color:var(--stress);">
-            <h3>🌿 MonthlyHectaresChart.vue</h3>
+            <h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                style="display:inline-block;vertical-align:-3px;margin-right:6px;"
+              >
+                <path
+                  d="M1 13 L5 7 L9 9.5 L12 4 L15 6"
+                  stroke="var(--chart-surf)"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1 13 L5 7 L9 9.5 L12 4 L15 6 L15 15 L1 15 Z"
+                  fill="var(--chart-surf)"
+                  opacity="0.18"
+                /></svg
+              >MonthlyHectaresChart.vue
+            </h3>
             <div class="chart-type"><span>Single Area Line</span></div>
             <table class="ref-table">
               <tr>
@@ -2976,7 +3253,26 @@
           style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;"
         >
           <div class="chart-ref" style="border-color:var(--normal);">
-            <h3>🏔️ TopForestsChart.vue</h3>
+            <h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                style="display:inline-block;vertical-align:-3px;margin-right:6px;"
+              >
+                <rect x="1" y="1.5" width="13" height="3" rx="1" fill="var(--alertes)" />
+                <rect x="1" y="6.5" width="9" height="3" rx="1" fill="var(--anomalie)" />
+                <rect
+                  x="1"
+                  y="11.5"
+                  width="11"
+                  height="3"
+                  rx="1"
+                  fill="var(--stress)"
+                /></svg
+              >TopForestsChart.vue
+            </h3>
             <div class="chart-type"><span>Horizontal Bar · indexAxis:'y'</span></div>
             <table class="ref-table">
               <tr>
@@ -3015,7 +3311,26 @@
             </table>
           </div>
           <div class="chart-ref" style="border-color:var(--alertes);">
-            <h3>📍 TopParcelsChart.vue</h3>
+            <h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                style="display:inline-block;vertical-align:-3px;margin-right:6px;"
+              >
+                <rect x="1" y="1.5" width="11" height="3" rx="1" fill="var(--alertes)" />
+                <rect x="1" y="6.5" width="8" height="3" rx="1" fill="var(--anomalie)" />
+                <rect x="1" y="11.5" width="9.5" height="3" rx="1" fill="var(--stress)" />
+                <circle cx="14" cy="4" r="2" fill="var(--alertes)" />
+                <path
+                  d="M14 6 L14 9"
+                  stroke="var(--alertes)"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                /></svg
+              >TopParcelsChart.vue
+            </h3>
             <div class="chart-type"><span>Horizontal Bar · indexAxis:'y'</span></div>
             <table class="ref-table">
               <tr>
@@ -3052,7 +3367,23 @@
         </div>
 
         <div class="chart-ref" style="border-color:var(--accent);">
-          <h3>🌿 SpeciesChart.vue</h3>
+          <h3>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              style="display:inline-block;vertical-align:-3px;margin-right:6px;"
+            >
+              <path d="M8 8 L8 2 A6 6 0 0 1 13.2 11 Z" fill="var(--chart-bar)" />
+              <path d="M8 8 L13.2 11 A6 6 0 0 1 2.8 11 Z" fill="var(--chart-surf)" />
+              <path
+                d="M8 8 L2.8 11 A6 6 0 0 1 8 2 Z"
+                fill="var(--accent)"
+                opacity="0.45"
+              /></svg
+            >SpeciesChart.vue
+          </h3>
           <div class="chart-type"><span>Polar Area</span></div>
           <table class="ref-table">
             <tr>
@@ -3291,7 +3622,43 @@
         </style>
 
         <!-- 1. MonthlyEventsChart -->
-        <p class="chart-sec-title">📊 Nombre de dépérissements par mois</p>
+        <p class="chart-sec-title">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <rect x="1" y="9" width="3.5" height="6" rx="0.5" fill="var(--alertes)" />
+            <rect
+              x="1"
+              y="5.5"
+              width="3.5"
+              height="3.5"
+              rx="0.5"
+              fill="var(--anomalie)"
+            />
+            <rect x="6.25" y="5" width="3.5" height="10" rx="0.5" fill="var(--alertes)" />
+            <rect x="6.25" y="2" width="3.5" height="3" rx="0.5" fill="var(--stress)" />
+            <rect
+              x="11.5"
+              y="7.5"
+              width="3.5"
+              height="7.5"
+              rx="0.5"
+              fill="var(--anomalie)"
+            />
+            <rect
+              x="11.5"
+              y="4.5"
+              width="3.5"
+              height="3"
+              rx="0.5"
+              fill="var(--alertes)"
+            /></svg
+          >Nombre de dépérissements par mois
+        </p>
         <p class="chart-sec-sub">Stacked Bar — MonthlyEventsChart.vue</p>
         <div class="cpg">
           <div class="cp cl">
@@ -3309,7 +3676,46 @@
         </div>
 
         <!-- 2. SeverityDoughnut -->
-        <p class="chart-sec-title">🍩 Répartition par sévérité</p>
+        <p class="chart-sec-title">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <circle
+              cx="8"
+              cy="8"
+              r="5.5"
+              stroke="var(--alertes)"
+              stroke-width="2.5"
+              fill="none"
+              stroke-dasharray="9 25.5"
+              transform="rotate(-90 8 8)"
+            />
+            <circle
+              cx="8"
+              cy="8"
+              r="5.5"
+              stroke="var(--anomalie)"
+              stroke-width="2.5"
+              fill="none"
+              stroke-dasharray="7 27.5"
+              transform="rotate(19 8 8)"
+            />
+            <circle
+              cx="8"
+              cy="8"
+              r="5.5"
+              stroke="var(--normal)"
+              stroke-width="2.5"
+              fill="none"
+              stroke-dasharray="15.5 19"
+              transform="rotate(108 8 8)"
+            /></svg
+          >Répartition par sévérité
+        </p>
         <p class="chart-sec-sub">Double-Ring Doughnut — SeverityDoughnut.vue</p>
         <div class="cpg">
           <div class="cp cl">
@@ -3328,7 +3734,35 @@
 
         <!-- 3. MonthlySurfaceChart -->
         <p class="chart-sec-title">
-          📈 Évolution mensuelle des dépérissements (Sévérité)
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <path
+              d="M1 12 L4 7.5 L7 9.5 L10 4 L13 6.5 L15 2.5"
+              stroke="var(--alertes)"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 12 L4 7.5 L7 9.5 L10 4 L13 6.5 L15 2.5 L15 15 L1 15 Z"
+              fill="var(--alertes)"
+              opacity="0.12"
+            />
+            <path
+              d="M1 13.5 L4 11 L7 12 L10 9 L13 11 L15 8"
+              stroke="var(--anomalie)"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+          >Évolution mensuelle des dépérissements (Sévérité)
         </p>
         <p class="chart-sec-sub">Dual Area Line — MonthlySurfaceChart.vue</p>
         <div class="cpg">
@@ -3347,7 +3781,29 @@
         </div>
 
         <!-- 3b. MonthlyHectaresChart -->
-        <p class="chart-sec-title">🌿 Impact mensuel de la surface (Hectares)</p>
+        <p class="chart-sec-title">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <path
+              d="M1 13 L5 7 L9 9.5 L12 4 L15 6"
+              stroke="var(--chart-surf)"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 13 L5 7 L9 9.5 L12 4 L15 6 L15 15 L1 15 Z"
+              fill="var(--chart-surf)"
+              opacity="0.18"
+            /></svg
+          >Impact mensuel de la surface (Hectares)
+        </p>
         <p class="chart-sec-sub">Single Area Line — MonthlyHectaresChart.vue</p>
         <div class="cpg">
           <div class="cp cl">
@@ -3365,7 +3821,23 @@
         </div>
 
         <!-- 4. SpeciesChart -->
-        <p class="chart-sec-title">🌿 Répartition Espèces</p>
+        <p class="chart-sec-title">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <path d="M8 8 L8 2 A6 6 0 0 1 13.2 11 Z" fill="var(--chart-bar)" />
+            <path d="M8 8 L13.2 11 A6 6 0 0 1 2.8 11 Z" fill="var(--chart-surf)" />
+            <path
+              d="M8 8 L2.8 11 A6 6 0 0 1 8 2 Z"
+              fill="var(--accent)"
+              opacity="0.45"
+            /></svg
+          >Répartition Espèces
+        </p>
         <p class="chart-sec-sub">Polar Area — SpeciesChart.vue</p>
         <div class="cpg">
           <div class="cp cl">
@@ -3383,7 +3855,19 @@
         </div>
 
         <!-- 5. TopForestsChart -->
-        <p class="chart-sec-title">🏔 Forêts les plus touchées</p>
+        <p class="chart-sec-title">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <rect x="1" y="1.5" width="13" height="3" rx="1" fill="var(--alertes)" />
+            <rect x="1" y="6.5" width="9" height="3" rx="1" fill="var(--anomalie)" />
+            <rect x="1" y="11.5" width="11" height="3" rx="1" fill="var(--stress)" /></svg
+          >Forêts les plus touchées
+        </p>
         <p class="chart-sec-sub">Horizontal Bar — TopForestsChart.vue</p>
         <div class="cpg">
           <div class="cp cl">
@@ -3401,7 +3885,42 @@
         </div>
 
         <!-- 6. TopParcelsChart -->
-        <p class="chart-sec-title">📍 Parcelles les plus touchées</p>
+        <p class="chart-sec-title">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <rect x="1" y="1.5" width="11" height="3" rx="1" fill="currentColor" />
+            <rect
+              x="1"
+              y="6.5"
+              width="8"
+              height="3"
+              rx="1"
+              fill="currentColor"
+              opacity="0.6"
+            />
+            <rect
+              x="1"
+              y="11.5"
+              width="9.5"
+              height="3"
+              rx="1"
+              fill="currentColor"
+              opacity="0.35"
+            />
+            <circle cx="14" cy="4" r="2" fill="currentColor" />
+            <path
+              d="M14 6 L14 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            /></svg
+          >Parcelles les plus touchées
+        </p>
         <p class="chart-sec-sub">Horizontal Bar — TopParcelsChart.vue</p>
         <div class="cpg">
           <div class="cp cl">
@@ -3419,7 +3938,20 @@
         </div>
 
         <!-- 7. SeverityPie -->
-        <p class="chart-sec-title">🥧 Severity Pie (Legacy)</p>
+        <p class="chart-sec-title">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            style="display:inline-block;vertical-align:-2px;margin-right:5px;"
+          >
+            <path d="M8 8 L8 2 A6 6 0 0 1 14 8 Z" fill="var(--alertes)" />
+            <path d="M8 8 L14 8 A6 6 0 0 1 5 13.2 Z" fill="var(--anomalie)" />
+            <path d="M8 8 L5 13.2 A6 6 0 0 1 2 5 Z" fill="var(--stress)" />
+            <path d="M8 8 L2 5 A6 6 0 0 1 8 2 Z" fill="var(--normal)" /></svg
+          >Severity Pie (Legacy)
+        </p>
         <p class="chart-sec-sub">Pie — SeverityPie.vue</p>
         <div class="cpg">
           <div class="cp cl">
@@ -5087,6 +5619,592 @@
           </div>
         </div>
       </section>
+
+      <!-- ══════════════════════════════════
+     11 · MAP PINS
+══════════════════════════════════ -->
+      <section id="mappins" class="sec">
+        <div class="sec-tag">11 — Map Pins</div>
+        <h2 class="sec-h">Marqueurs carte · Sévérité &amp; Clusters</h2>
+        <p class="sec-desc">
+          Pins SVG personnalisés pour la carte satellite. Chaque pin encode la sévérité
+          par couleur et porte une silhouette d'arbre goodforest. Disponibles en 3 tailles
+          et en version cluster.
+        </p>
+
+        <!-- Règle d'usage -->
+        <div
+          style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px;"
+        >
+          <div
+            class="card"
+            style="padding:18px 20px;border-left:4px solid var(--accent);"
+          >
+            <p
+              style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase;"
+            >
+              Principe d'encodage
+            </p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;">
+              <li
+                style="display:flex;gap:10px;align-items:center;font-size:13px;color:var(--t2);"
+              >
+                <span
+                  style="width:10px;height:10px;border-radius:50%;background:var(--alertes);flex-shrink:0;"
+                ></span
+                >Rouge — Alertes (forte sévérité)
+              </li>
+              <li
+                style="display:flex;gap:10px;align-items:center;font-size:13px;color:var(--t2);"
+              >
+                <span
+                  style="width:10px;height:10px;border-radius:50%;background:var(--anomalie);flex-shrink:0;"
+                ></span
+                >Orange — Anomalie (sévérité modérée)
+              </li>
+              <li
+                style="display:flex;gap:10px;align-items:center;font-size:13px;color:var(--t2);"
+              >
+                <span
+                  style="width:10px;height:10px;border-radius:50%;background:var(--stress);flex-shrink:0;"
+                ></span
+                >Amber — Stress (surveillance)
+              </li>
+              <li
+                style="display:flex;gap:10px;align-items:center;font-size:13px;color:var(--t2);"
+              >
+                <span
+                  style="width:10px;height:10px;border-radius:50%;background:var(--normal);flex-shrink:0;"
+                ></span
+                >Vert — Normal / sain
+              </li>
+            </ul>
+          </div>
+          <div class="card" style="padding:18px 20px;border-left:4px solid var(--cb);">
+            <p
+              style="font-size:12px;font-weight:700;color:var(--t2);margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase;"
+            >
+              Implémentation
+            </p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;">
+              <li style="font-size:13px;color:var(--t2);">
+                → Leaflet :
+                <code
+                  style="font-size:11px;background:var(--acs);color:var(--accent);padding:1px 5px;border-radius:4px;"
+                  >L.divIcon</code
+                >
+                avec SVG inline
+              </li>
+              <li style="font-size:13px;color:var(--t2);">
+                → MapLibre / Mapbox : image source PNG ou SVG via
+                <code
+                  style="font-size:11px;background:var(--acs);color:var(--accent);padding:1px 5px;border-radius:4px;"
+                  >addImage</code
+                >
+              </li>
+              <li style="font-size:13px;color:var(--t2);">
+                → Taille standard : 32×40 px · anchor point : bas centre
+              </li>
+              <li style="font-size:13px;color:var(--t2);">
+                → Taille cluster : 44×44 px · circulaire
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pins par sévérité -->
+        <p
+          style="font-size:12px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px;"
+        >
+          Pins individuels · sévérité
+        </p>
+        <div
+          style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-end;margin-bottom:48px;padding:32px;background:var(--ibg);border-radius:16px;border:1px solid var(--cb);"
+        >
+          <!-- Alerte -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg
+              width="32"
+              height="40"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                fill="var(--alertes)"
+              />
+              <path
+                d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                fill="rgba(0,0,0,0.15)"
+              />
+              <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+              <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+              <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+              <rect
+                x="14.5"
+                y="23"
+                width="3"
+                height="3"
+                rx="0.5"
+                fill="white"
+                opacity="0.9"
+              />
+            </svg>
+            <div style="text-align:center;">
+              <p style="font-size:12px;font-weight:600;color:var(--alertes);">Alertes</p>
+              <p style="font-size:10px;color:var(--t3);">forte sévérité</p>
+            </div>
+          </div>
+
+          <!-- Anomalie -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg
+              width="32"
+              height="40"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                fill="var(--anomalie)"
+              />
+              <path
+                d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                fill="rgba(0,0,0,0.15)"
+              />
+              <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+              <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+              <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+              <rect
+                x="14.5"
+                y="23"
+                width="3"
+                height="3"
+                rx="0.5"
+                fill="white"
+                opacity="0.9"
+              />
+            </svg>
+            <div style="text-align:center;">
+              <p style="font-size:12px;font-weight:600;color:var(--anomalie);">
+                Anomalie
+              </p>
+              <p style="font-size:10px;color:var(--t3);">sévérité modérée</p>
+            </div>
+          </div>
+
+          <!-- Stress -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg
+              width="32"
+              height="40"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                fill="var(--stress)"
+              />
+              <path
+                d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                fill="rgba(0,0,0,0.12)"
+              />
+              <path d="M16 7.5 L13 13 H19 Z" fill="rgba(0,0,0,0.65)" opacity="0.85" />
+              <path
+                d="M16 11.5 L10.5 18.5 H21.5 Z"
+                fill="rgba(0,0,0,0.65)"
+                opacity="0.85"
+              />
+              <path
+                d="M16 15.5 L8.5 23.5 H23.5 Z"
+                fill="rgba(0,0,0,0.65)"
+                opacity="0.85"
+              />
+              <rect
+                x="14.5"
+                y="23"
+                width="3"
+                height="3"
+                rx="0.5"
+                fill="rgba(0,0,0,0.65)"
+                opacity="0.85"
+              />
+            </svg>
+            <div style="text-align:center;">
+              <p style="font-size:12px;font-weight:600;color:var(--stress);">Stress</p>
+              <p style="font-size:10px;color:var(--t3);">surveillance</p>
+            </div>
+          </div>
+
+          <!-- Normal -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg
+              width="32"
+              height="40"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                fill="var(--normal)"
+              />
+              <path
+                d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                fill="rgba(0,0,0,0.12)"
+              />
+              <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+              <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+              <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+              <rect
+                x="14.5"
+                y="23"
+                width="3"
+                height="3"
+                rx="0.5"
+                fill="white"
+                opacity="0.9"
+              />
+            </svg>
+            <div style="text-align:center;">
+              <p style="font-size:12px;font-weight:600;color:var(--normal);">Normal</p>
+              <p style="font-size:10px;color:var(--t3);">parcelle saine</p>
+            </div>
+          </div>
+
+          <!-- Séparateur -->
+          <div style="width:1px;height:60px;background:var(--cb);"></div>
+
+          <!-- Version sm -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg
+              width="22"
+              height="28"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                fill="var(--alertes)"
+              />
+              <path
+                d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                fill="rgba(0,0,0,0.15)"
+              />
+              <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+              <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+              <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+              <rect
+                x="14.5"
+                y="23"
+                width="3"
+                height="3"
+                rx="0.5"
+                fill="white"
+                opacity="0.9"
+              />
+            </svg>
+            <p style="font-size:10px;color:var(--t3);">sm · 22×28</p>
+          </div>
+
+          <!-- Version md -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg
+              width="32"
+              height="40"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                fill="var(--alertes)"
+              />
+              <path
+                d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                fill="rgba(0,0,0,0.15)"
+              />
+              <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+              <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+              <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+              <rect
+                x="14.5"
+                y="23"
+                width="3"
+                height="3"
+                rx="0.5"
+                fill="white"
+                opacity="0.9"
+              />
+            </svg>
+            <p style="font-size:10px;color:var(--t3);">md · 32×40</p>
+          </div>
+
+          <!-- Version lg -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg
+              width="44"
+              height="54"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                fill="var(--alertes)"
+              />
+              <path
+                d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                fill="rgba(0,0,0,0.15)"
+              />
+              <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+              <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+              <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+              <rect
+                x="14.5"
+                y="23"
+                width="3"
+                height="3"
+                rx="0.5"
+                fill="white"
+                opacity="0.9"
+              />
+            </svg>
+            <p style="font-size:10px;color:var(--t3);">lg · 44×54</p>
+          </div>
+        </div>
+
+        <!-- Pins avec compteur -->
+        <p
+          style="font-size:12px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px;"
+        >
+          Pins avec compteur d'alertes
+        </p>
+        <div
+          style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;margin-bottom:48px;padding:32px;background:var(--ibg);border-radius:16px;border:1px solid var(--cb);"
+        >
+          <!-- Alerte avec badge count -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <div style="position:relative;width:32px;height:40px;">
+              <svg width="32" height="40" viewBox="0 0 32 40" fill="none">
+                <path
+                  d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                  fill="var(--alertes)"
+                />
+                <path
+                  d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                  fill="rgba(0,0,0,0.15)"
+                />
+                <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+                <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+                <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+                <rect
+                  x="14.5"
+                  y="23"
+                  width="3"
+                  height="3"
+                  rx="0.5"
+                  fill="white"
+                  opacity="0.9"
+                />
+              </svg>
+              <div
+                style="position:absolute;top:-6px;right:-8px;background:var(--alertes);color:white;border-radius:99px;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;padding:0 4px;border:2px solid var(--card);line-height:1;"
+              >
+                5
+              </div>
+            </div>
+            <p style="font-size:11px;color:var(--t2);font-weight:500;">×5 alertes</p>
+          </div>
+
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <div style="position:relative;width:32px;height:40px;">
+              <svg width="32" height="40" viewBox="0 0 32 40" fill="none">
+                <path
+                  d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                  fill="var(--anomalie)"
+                />
+                <path
+                  d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                  fill="rgba(0,0,0,0.15)"
+                />
+                <path d="M16 7.5 L13 13 H19 Z" fill="white" opacity="0.9" />
+                <path d="M16 11.5 L10.5 18.5 H21.5 Z" fill="white" opacity="0.9" />
+                <path d="M16 15.5 L8.5 23.5 H23.5 Z" fill="white" opacity="0.9" />
+                <rect
+                  x="14.5"
+                  y="23"
+                  width="3"
+                  height="3"
+                  rx="0.5"
+                  fill="white"
+                  opacity="0.9"
+                />
+              </svg>
+              <div
+                style="position:absolute;top:-6px;right:-8px;background:var(--anomalie);color:white;border-radius:99px;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;padding:0 4px;border:2px solid var(--card);line-height:1;"
+              >
+                12
+              </div>
+            </div>
+            <p style="font-size:11px;color:var(--t2);font-weight:500;">×12 anomalies</p>
+          </div>
+
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <div style="position:relative;width:32px;height:40px;">
+              <svg width="32" height="40" viewBox="0 0 32 40" fill="none">
+                <path
+                  d="M16 0C7.163 0 0 7.163 0 16c0 10.627 14.4 23.2 15.04 23.76a1.28 1.28 0 0 0 1.92 0C17.6 39.2 32 26.627 32 16 32 7.163 24.837 0 16 0z"
+                  fill="var(--stress)"
+                />
+                <path
+                  d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z"
+                  fill="rgba(0,0,0,0.12)"
+                />
+                <path d="M16 7.5 L13 13 H19 Z" fill="rgba(0,0,0,0.65)" opacity="0.85" />
+                <path
+                  d="M16 11.5 L10.5 18.5 H21.5 Z"
+                  fill="rgba(0,0,0,0.65)"
+                  opacity="0.85"
+                />
+                <path
+                  d="M16 15.5 L8.5 23.5 H23.5 Z"
+                  fill="rgba(0,0,0,0.65)"
+                  opacity="0.85"
+                />
+                <rect
+                  x="14.5"
+                  y="23"
+                  width="3"
+                  height="3"
+                  rx="0.5"
+                  fill="rgba(0,0,0,0.65)"
+                  opacity="0.85"
+                />
+              </svg>
+              <div
+                style="position:absolute;top:-6px;right:-8px;background:var(--stress);color:var(--card);border-radius:99px;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;padding:0 4px;border:2px solid var(--card);line-height:1;"
+              >
+                3
+              </div>
+            </div>
+            <p style="font-size:11px;color:var(--t2);font-weight:500;">×3 stress</p>
+          </div>
+        </div>
+
+        <!-- Clusters -->
+        <p
+          style="font-size:12px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px;"
+        >
+          Clusters · regroupement de parcelles
+        </p>
+        <div
+          style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;margin-bottom:20px;padding:32px;background:var(--ibg);border-radius:16px;border:1px solid var(--cb);"
+        >
+          <!-- Cluster alertes -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" fill="var(--alertes)" opacity="0.15" />
+              <circle cx="24" cy="24" r="16" fill="var(--alertes)" opacity="0.3" />
+              <circle cx="24" cy="24" r="11" fill="var(--alertes)" />
+              <text
+                x="24"
+                y="28"
+                text-anchor="middle"
+                fill="white"
+                font-size="11"
+                font-weight="700"
+                font-family="Poppins,sans-serif"
+              >
+                42
+              </text>
+            </svg>
+            <p style="font-size:11px;color:var(--t2);font-weight:500;">Cluster alertes</p>
+          </div>
+
+          <!-- Cluster anomalie -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" fill="var(--anomalie)" opacity="0.15" />
+              <circle cx="24" cy="24" r="16" fill="var(--anomalie)" opacity="0.3" />
+              <circle cx="24" cy="24" r="11" fill="var(--anomalie)" />
+              <text
+                x="24"
+                y="28"
+                text-anchor="middle"
+                fill="white"
+                font-size="11"
+                font-weight="700"
+                font-family="Poppins,sans-serif"
+              >
+                17
+              </text>
+            </svg>
+            <p style="font-size:11px;color:var(--t2);font-weight:500;">
+              Cluster anomalie
+            </p>
+          </div>
+
+          <!-- Cluster mixte -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <svg width="52" height="52" viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="26" fill="var(--alertes)" opacity="0.12" />
+              <circle cx="28" cy="28" r="19" fill="var(--alertes)" opacity="0.25" />
+              <circle cx="28" cy="28" r="13" fill="var(--alertes)" />
+              <text
+                x="28"
+                y="33"
+                text-anchor="middle"
+                fill="white"
+                font-size="13"
+                font-weight="700"
+                font-family="Poppins,sans-serif"
+              >
+                128
+              </text>
+            </svg>
+            <p style="font-size:11px;color:var(--t2);font-weight:500;">Cluster large</p>
+          </div>
+
+          <div
+            style="display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:16px 18px;background:var(--card);border:1px solid var(--cb);border-radius:10px;max-width:260px;"
+          >
+            <p
+              style="font-size:11px;font-weight:700;color:var(--t1);text-transform:uppercase;letter-spacing:.06em;"
+            >
+              Logique de taille
+            </p>
+            <p style="font-size:12px;color:var(--t2);">
+              1–9 alertes →
+              <code
+                style="font-size:10px;background:var(--acs);color:var(--accent);padding:1px 4px;border-radius:3px;"
+                >40px</code
+              >
+            </p>
+            <p style="font-size:12px;color:var(--t2);">
+              10–49 alertes →
+              <code
+                style="font-size:10px;background:var(--acs);color:var(--accent);padding:1px 4px;border-radius:3px;"
+                >44px</code
+              >
+            </p>
+            <p style="font-size:12px;color:var(--t2);">
+              50+ alertes →
+              <code
+                style="font-size:10px;background:var(--acs);color:var(--accent);padding:1px 4px;border-radius:3px;"
+                >52px</code
+              >
+            </p>
+            <p style="font-size:12px;color:var(--t2);">
+              Couleur = sévérité dominante du cluster
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -5144,7 +6262,7 @@
             </g>
           </svg>
           <span style="font-size:11px;color:var(--t3);font-weight:400;"
-            >Design System v2.0 · Avril 2026</span
+            >Design System v1 · Avril 2026</span
           >
         </div>
         <p style="font-size:12px;color:var(--t3);">
