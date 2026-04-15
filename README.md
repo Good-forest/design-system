@@ -1,4 +1,4 @@
-# goodforest — Design System
+# goodforest — Design System v1.1
 
 Référence visuelle et technique de la charte graphique goodforest. Document vivant, mis à jour à chaque évolution du produit.
 
@@ -21,6 +21,7 @@ Ouvrir `index.html` directement dans un navigateur. Aucun build, aucune dépenda
 - **Tokens de thème** — CSS variables sémantiques (`--alertes`, `--accent`, `--t1`…)
 - **Typographie** — Échelle Poppins complète avec responsive tokens
 - **Composants** — Badges, boutons, inputs, KPI cards, tableaux, progress bars, toggles
+- **Icônes & Patterns** — Icônes produit SVG adaptatives et composants "Comment ça marche" qui utilisent `--primary` pour gérer Dark/Light
 - **Sévérité** — 4 niveaux Normal / À surveiller / À risque / Critique (FR · EN · DB)
 - **Charts** — Référence Chart.js des 7 graphiques avec configs et rendus par thème
 - **Map Pins** — Marqueurs SVG personnalisés (teardrop + arbre goodforest) avec clusters

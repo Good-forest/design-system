@@ -1,4 +1,4 @@
-# goodforest — Design System Spec
+# goodforest — Design System Spec v1.1
 > Document de référence pour déploiement automatisé par IA (technique BMAD).
 > Lire ce fichier en entier avant d'écrire la moindre ligne de code.
 
@@ -341,6 +341,20 @@ Couleur `--primary` par thème :
 **Icon-only** — sidebar compacte 60px, icônes seules + tooltip.
 
 Item actif : `background: var(--acs); color: var(--accent);`
+
+### Icônes Produit & Flow ("Comment ça marche")
+
+Les icônes illustratives (Surveillance, Analyse IA, Web & Mobile) doivent :
+1. Être inline SVG (pas d'images).
+2. Utiliser **uniquement** `stroke="var(--primary)"` pour le tracé principal, et `fill="var(--primary)" fill-opacity="0.15"` pour les zones translucides.
+3. Ne **jamais** inclure de fond statique (`rgba(...)`) ou utiliser des couleurs comme `--accent` pour leur rendu, car `--primary` permet spécifiquement d'atteindre le Jaune Néon en mode Dark tout en restant Émeraude en mode Light.
+
+Exemple de conteneur d'étape :
+```html
+<div style="border:1px solid var(--cb); box-shadow:0 4px 16px rgba(0,0,0,0.06);">
+   <svg stroke="var(--primary)"...>...</svg>
+</div>
+```
 
 ---
 
